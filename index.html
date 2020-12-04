@@ -15,38 +15,66 @@
             <nav>
                 <figure class="logo"><a><img src="img/logo-branco.png"><figcaption>Molinfy.</figcaption></a></figure>
                 <ul class="itens-nav">
-                    <li><a href="index.html"><div class="icon">&#8962;</div>Início</a></li>
-                    <li><a><div class="icon">&#8981;</div>Buscar</a></li>
-                    <li><a><div class="icon">&#8278;</div>Sua Biblioteca</a></li>
+                    <li>
+                        <a href="index.html"><div class="icon">&#8962;</div>
+                            <h3>Início</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a><div class="icon">&#8981;</div>
+                            <h3>Buscar</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a><div class="icon">&#8278;</div>
+                            <h3>Sua Biblioteca</h3>
+                        </a>
+                    </li>
                 </ul>
 
                 <h1>PLAYLISTS</h1>
                 <ul class="itens-nav">
-                    <li>
-                        <a><div class="quadradinho">+</div>Criar Playlist</a>
+                    <li class="item-icon">
+                        <a><div class="quadradinho"><p>+</p></div>
+                            <h2>Criar Playlist</h2>
+                        </a>
                     </li>
-                    <li>
-                        <a><div class="quadradinho">&#10084;</div>Músicas Curtidas</a>
+                    <li class="item-icon">
+                        <a><div class="quadradinho"><p>&#10084;</p></div>
+                            <h2>Músicas Curtidas</h2>
+                        </a>
                     </li>
                 </ul>
 
                 <hr>
 
-                <div class="scroller">
-                    <ul class="itens-nav">
-                        <li class="primeiro-item">Playlist1</li>
-                        <li>Playlist2</li>
-                        <li>Playlist3</li>
-                        <li>Playlist4</li>
-                        <li>Playlist5</li>
-                        <li>Playlist6</li>
-                        <li>Playlist7</li>
-                        <li>Playlist8</li>
-                        <li>Playlist9</li>
-                    </ul>
+                <div class="caixa-scroller">
+                    <div class="scroller">
+                        <ul class="itens-nav">
+                            <li class="primeiro-item">Playlist1</li>
+                            <li>Playlist2</li>
+                            <li>Playlist3</li>
+                            <li>Playlist4</li>
+                            <li>Playlist5</li>
+                            <li>Playlist6</li>
+                            <li>Playlist7</li>
+                            <li>Playlist8</li>
+                            <li>Playlist9</li>
+                            <li>Playlist2</li>
+                            <li>Playlist3</li>
+                            <li>Playlist4</li>
+                            <li>Playlist5</li>
+                            <li>Playlist6</li>
+                            <li>Playlist7</li>
+                            <li>Playlist8</li>
+                            <li>Playlist9</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <a class="instalar-app"><div class="download">&#11107;</div><p>INSTALAR O APP</p></a>
+                <div class="instalarapp-caixa">
+                    <a class="instalar-app"><div class="download">&#11107;</div><p>INSTALAR O APP</p></a>        
+                </div>
             </nav>
             
         </div>
@@ -61,27 +89,35 @@
 
         <div class="controlador">
             <div class="tocando">
-                
+                <div class="capa-album"></div>
+                <div class="titulos">
+                    <div class="titulos-musica"><h1>Lorem ipsum</h1></div>
+                    <div class="titulos-artista"><h2>jdbjsbfjbspn, fodsnfojsdf</h2></div>
+                </div>
             </div>
 
             <div class="controle">
                 <div class="buttons">
-                    <svg class="play" height="35" width="35" viewBox="0 0 1200 1200">
-                    <path
-                        d="M 600,1200 C 268.65,1200 0,931.35 0,600 0,268.65 268.65,0 600,0 c 331.35,0 600,268.65 600,600 0,331.35 -268.65,600 -600,600 z M 450,300.45 450,899.55 900,600 450,300.45 z"
-                        id="path16995" />
-                    </svg>
+                    <button class="prev"><img src="img/prev.png" alt=""></button>
+                    <button class="play"><img src="img/play.png" alt=""></button>
+                    <button class="fow"><img src="img/next.png" alt=""></button>
+                </div>
 
-                    <svg class="pause" height="35" width="35" viewBox="0 0 1200 1200">
-                    <path
-                        id="path15778"
-                        d="M 600,0 C 268.62914,0 0,268.62914 0,600 c 0,331.37086 268.62914,600 600,600 331.37086,0 600,-268.62914 600,-600 C 1200,268.62914 931.37086,0 600,0 z m -269.16515,289.38 181.71397,0 0,621.24 -181.71397,0 0,-621.24 z m 356.61633,0 181.71399,0 0,621.24 -181.71399,0 0,-621.24 z" />
-                    </svg>
+                <div class="trackbar">
+                    <div class="tempo">00:00</div>
+                    <div>
+                      <input class="barra" type="range" min="0" max="100" step="1" />
+                    </div>
+                    <div class="tempo-total">00:00</div>
                 </div>
             </div>
 
-            <div class="controle2">
-                
+            <div class="controle-2">
+
+                <div class="volume">
+                    <button class="volume-btn"><img src="img/volume-icon.png" alt=""></button>
+                    <input class="barra-vol" type="range" min="0" max="100" step="1" />
+                </div>
             </div>
         </div>
 

@@ -14,15 +14,15 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
-    width: 17vw;
+    height: calc(100vh - 90px);
+    width: 230px;
 }
 
 .controlador{
     background-color: rgb(41, 41, 41);
     position: fixed;
     bottom: 0;
-    height: 14vh;
+    height: 90px;
     width: 100%;
     z-index: 2;
 
@@ -31,17 +31,17 @@ body{
 
 .logo{
     color: white;
-    font-size: 2vw;
+    font-size: 27px;
     width: 100%;
-    padding-top: 3.5vh;
+    padding-top: 25px;
     letter-spacing: -2px;
 }
 
 .logo img{
-    width: 3vw;
+    width: 40px;
     display: inline-block;
     vertical-align: middle;
-    margin: 0.2vw;
+    margin: 4px;
 }
 
 .logo figcaption{
@@ -53,19 +53,25 @@ nav{
 }
 
 nav ul {
-    margin-top: 3.5vh;
-    margin-bottom: 3.5vh;
+    margin-top: 10px;
+    margin-bottom: 18px;
 }
 
 nav li{
-    font-size: 2.2vh;
-    margin-top: 1.8vh;
+    font-size: 13px;
+    margin-top: 10px;
     vertical-align: center;
 }
 
 nav {
     width: 78%;
     margin: 0 auto;
+}
+
+.selecionado{
+    background-color: rgba(63, 63, 63, 0.76);
+    border-radius: 3px;
+    padding-bottom: 2px;
 }
 
 .itens-nav a {
@@ -78,13 +84,19 @@ nav {
     color: white;
 }
 
+.itens-nav h3 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
 h1{
-    margin-top: 6vh;
-    font-size: 2.5vh;
+    margin-top: 35px;
+    font-size: 13px;
 }
 
 hr{ 
-    margin: 2vh 0;
+    margin: 15px 0;
     height: 1px;
     background-color: rgb(66, 66, 66);
     border: none;
@@ -93,42 +105,56 @@ hr{
 
 .quadradinho {
     background-color: rgb(173, 173, 173);
-    width: 5vh;
-    height: 5vh;
+    width: 35px;
+    height: 35px;
     display: inline-block;
-    vertical-align: middle;
     text-align: center;
 
-    margin-right: 2vh;
-    font-size: 5vh;
+    margin-top: 2px;
+    margin-right: 15px;
+    font-size: 35px;
     color: black;
 }
 
 .icon{
-    font-size: 5vh;
+    font-size: 32px;
     display: inline-block;
-    margin-right: 2vh;
+    margin-right: 10px;
 }
 
+.quadradinho p{
+    margin-top: 3px;
+}
+
+.item-icon h2{
+    display: inline-block;
+    vertical-align: middle;
+
+    margin-bottom: 5px;
+}
 
 .download{
-    width: 3.2vh;
-    height: 3vh;
+    width: 20px;
+    height: 20px;
     border: white 1px solid ;
     border-radius: 100%;
     text-align: center;
     display: inline-block;
     vertical-align: middle;
-    font-size: 3vh;
+    font-size: 20px;
     
-    margin-right: 1vh;
+    margin-right: 10px;
     
+}
+
+.instalarapp-caixa{
+    padding-top: 10px;
 }
 
 .instalar-app p{
     display: inline-block;
     vertical-align: middle;
-    font-size: 2vh
+    font-size: 11px;
 }
 
 .primeiro-item {
@@ -138,13 +164,18 @@ hr{
 /*NAV */
 /*scroller*/
 
-.scroller{
+
+.caixa-scroller {
+    height: 20vh;   
+    display: block;
     overflow: auto;
-    height: 15.5vh;
+}
+
+.scroller{
     background-color: black;
     margin: 0;
     padding: 0;
-    margin-bottom: 2vh;
+    margin-bottom: 10px;
 }
 
 .scroller .itens-nav {
@@ -153,22 +184,23 @@ hr{
 }
 
 .scroller li{
-    color: rgb(95, 95, 95);
+    color: rgb(122, 122, 122);
 }
 
-::-webkit-scrollbar {
-  width: 2vh;
+::-webkit-scrollbar{
+    width: 12px;
 }
 
-::-webkit-scrollbar-track {
+::-webkit-scrollbar-track{
     background: #000000; 
 }
 
-::-webkit-scrollbar-thumb {
-    background: #888; 
+::-webkit-scrollbar-thumb{
+    background: rgb(88, 88, 88); 
+    height: 5px;
 }
 
-::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover{
     background: rgb(255, 255, 255); 
 }
 
@@ -186,30 +218,171 @@ hr{
 }
 
 .tocando {
+    display: inline-block;
+}
+
+.capa-album{
+    height: 60px;
+    width: 60px;
+    background-color: rgb(173, 173, 173);
+    margin: 15px;
+    display: inline-block;
+}
+
+.titulos {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.titulos h1{
+    color: white;
+    font-size: 15px;
+    margin-bottom: 5px;
     
+    
+}
+
+.titulos h2{
+    color: rgb(122, 122, 122);
+    font-size: 10px;
 }
 
 .controle {
     text-align: center;
+    align-self: top;
+    margin-top: 8px;
+    
     
 }
 
-.controle2 {
-   
+.controle-2 {
+    display: block;
+    text-align: end;
+    
 }
-.buttons{
+
+.controle-2 button {
+    background-color: rgb(0, 0, 0, 0);
+    border: none;
+}
+
+.volume {
+    position: relative;
+    top: 35%;
+    right: 30px;
     vertical-align: middle;
-    margin-top: 4%;
+}
+
+.volume-btn img {
+    height: 22px;
+}
+
+.barra-vol {
+    -webkit-appearance: none;
+    width: 22%;
+    height: 4px;
+    vertical-align: middle;
+    border-radius: 100px;
+    background: #757575;
+    outline: none;
+    position: relative;
+    margin-bottom: 12px;
+    
+}
+
+.barra-vol::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #b8b8b8;
+    
+}
+
+.buttons{
+    margin-top: 1%;
+    align-self: center;
 }
 
 .play {
-    fill: rgb(173, 173, 173);
+    background-color: rgb(173, 173, 173, 0);
+    border: rgb(173, 173, 173) solid 1px;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+}
+
+.play img {
+    height: 17px;
+    margin-left: 2px;
+    margin-top: 2px;
     
 }
 
-.pause {
-    fill: rgb(173, 173, 173);
-    
-    
+.prev, .fow {
+    border: none;
+    background-color: rgb(0, 0, 0, 0);
+    margin-bottom: 4px;
 }
+
+.fow{
+    margin-left: 8px;
+}
+
+.prev{
+    margin-right: 8px;
+}
+
+.fow img {
+    height: 12px;
+}
+
+.prev img {
+    height: 12px;
+}
+
+.trackbar div{
+    display: inline;
+}
+
+.trackbar {
+    margin-top: 10px;
+}
+
+.barra {
+    -webkit-appearance: none;
+    width: 70%;
+    height: 5px;
+    vertical-align: middle;
+    border-radius: 100px;
+    background: #757575;
+    outline: none;
+}
+
+.barra::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #b8b8b8;
+}
+
+.tempo, .tempo-total {
+      font-size: 13px;
+      color: #8d8d8d;
+  }
 /*controlador */
+
+
+/*conteudo principal*/
+
+main {
+    background-color: rgb(19, 19, 19);
+    height: 100vh;
+    width: 100vw;
+}
+
+/*conteudo principal*/
