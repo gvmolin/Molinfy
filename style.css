@@ -144,7 +144,6 @@ hr{
     font-size: 20px;
     
     margin-right: 10px;
-    
 }
 
 .instalarapp-caixa{
@@ -173,7 +172,6 @@ hr{
     margin: 0;
     padding: 0;
     margin-bottom: 10px;
-    
 }
 
 .scroller .itens-nav {
@@ -191,6 +189,7 @@ hr{
 
 ::-webkit-scrollbar-track{
     background: #000000; 
+    
 }
 
 ::-webkit-scrollbar-thumb{
@@ -239,8 +238,6 @@ hr{
     color: white;
     font-size: 15px;
     margin-bottom: 5px;
-    
-    
 }
 
 .titulos h2{
@@ -252,14 +249,11 @@ hr{
     text-align: center;
     align-self: top;
     margin-top: 8px;
-    
-    
 }
 
 .controle-2 {
     display: block;
     text-align: end;
-    
 }
 
 .controle-2 button {
@@ -288,7 +282,6 @@ hr{
     outline: none;
     position: relative;
     margin-bottom: 12px;
-    
 }
 
 .barra-vol::-webkit-slider-thumb {
@@ -298,7 +291,6 @@ hr{
     height: 12px;
     border-radius: 50%;
     background: #b8b8b8;
-    
 }
 
 .buttons{
@@ -319,7 +311,6 @@ hr{
     height: 17px;
     margin-left: 2px;
     margin-top: 2px;
-    
 }
 
 .prev, .fow {
@@ -400,7 +391,6 @@ main {
     right: 0;
     height: 70px;
     width: calc(100% - 230px);
-    
 }
 
 .main-superior-esquerda {
@@ -414,7 +404,7 @@ main {
     display: inline-block;
     position: relative;
     text-align: end;
-    width: 50%;
+    width: 56%;
 }
 
 .main-superior-esquerda button{
@@ -440,33 +430,133 @@ main {
     border: white 1px solid;
     width: 15vw;
     height: 40px;
+    font-weight: bolder;
+}
+
+.upgrade:hover {
+    transform: scale(1.07);
+    background-color: rgb(0, 0, 0, 1);
 }
 
 .container-conteudo {
-    width: 95%;
+    width: 97%;
     margin: 0 auto;
+    margin-right: 0;
+    overflow: auto;
+    height: 90vh;
 }
+
+.avatar-circle {
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    background-color: white;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 
 /*conteudo principal padrao*/
 
 /*biblioteca */
 
 .titulo-aba {
-    font-size: 60px;
+    font-size: 90px;
 }
 
 .titulo-aba-container {
-    display: inline-block
+    display: inline-block;
+    color: white;
+    font-weight: 900;
+    vertical-align: top;
+    margin-top: 70px;
+    margin-left: 15px;
+    letter-spacing: -1px;
+}
+
+.titulo-aba-container h1, h4 {
+    margin: 3px 0;
+    padding: 0;
 }
 
 .capa-album-main {
     height: 200px;
     width: 200px;
     display: inline-block;
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 .main-titulos {
-    margin-top: 100px;
+    margin-top: 90px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
 
+.label-lista {
+    width: 100%; 
+    text-align: left;
+}
+
+.label-lista h2 {
+    color: rgb(99, 99, 99);
+    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    display: inline-block;
+    font-weight: lighter;
+}
+
+.label-lista h2:nth-child(1){
+    width: 3%;
+}
+
+.label-lista h2:nth-child(2){
+    width: 40%;
+}
+
+.label-lista h2:nth-child(3){
+    width: 25%;
+}
+
+.label-lista h2:nth-child(4){
+    width: 20%;
+}
+
+.label-lista h2:nth-child(5){
+    width: auto;
+}
+
+.item-lista {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.item-lista h2 { 
+    display: inline-block;
+    color: rgb(255, 255, 255);
+}
+
+.item-lista h2:nth-child(1){
+    width: 3%;
+}
+
+.item-lista h2:nth-child(2){
+    width: 40%;
+}
+
+.item-lista h2:nth-child(3){
+    width: 25%;
+}
+
+.item-lista h2:nth-child(4){
+    width: 20%;
+}
+
+.item-lista h2:nth-child(5){
+    width: auto;
+}
+
+.musicas-lista {
+    padding-bottom: 50px;
 }
