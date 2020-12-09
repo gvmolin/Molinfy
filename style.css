@@ -14,7 +14,7 @@ body, main{
     position: fixed;
     top: 0;
     left: 0;
-    height: calc(100% - 90px);
+    height: calc(100vh - 90px);
     width: 230px;
 }
 
@@ -530,7 +530,12 @@ main {
 
 .item-lista {
     width: 100%;
-    margin-top: 10px;
+    padding: 10px 0;
+}
+
+.item-lista:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    
 }
 
 .item-lista h2 { 
@@ -559,6 +564,10 @@ main {
 }
 
 .musicas-lista {
-    padding-bottom: 50px;
-    font-size: 15px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+audio {
+    margin-bottom: 30px;
 }
