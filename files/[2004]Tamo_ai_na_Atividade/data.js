@@ -64,20 +64,10 @@ var data = [
       title: "Lixo e o Luxo",
       file: "./files/[2004]Tamo_ai_na_Atividade/[15] Lixo e o Luxo.mp3"
     }
-];
+]
+
+export default data;
 
 //////////////////////
-
-if (document.readyState == 'loading') {
-  document.addEventListener('DOMContentLoaded', pronto)
-} else {
-  pronto()
-}
-
-function pronto(){
-  montarPagina();
-  addLista();
-  lerPlaylists();
-}
 
 
