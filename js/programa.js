@@ -25,7 +25,7 @@ function addLista(dir){
         
         
         var itemNovoLista = `
-                <div>
+                <div onclick="selecionarMusica('${posData.title}', '${dir[0].album}', '${dir[0].cover}')">
                 <h2>-</h2>
                 <h2 class="item-lista-titulo">${posData.title}</h2>
                 <h2 class="item-lista-album">${dir[0].album}</h2>
@@ -45,12 +45,6 @@ function lerPlaylist(dir){
     
     itemPlaylist.addEventListener('click',() => {montarPagina(dir)})
     playlistsLista.append(itemPlaylist)
-};
-
-function selecionarMusica(nome, artista, cover){
-    tituloTocador.innerText = nome
-    artistaTocador.innerText = artista
-    capaAlbumTocador.style.background = `url("${cover}") no-repeat center center / cover`
 };
 
 export {lerPlaylist};

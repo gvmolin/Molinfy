@@ -1,8 +1,7 @@
-import data0 from './files/[1997]Transpiração_Contínua_Prolongada/data.js';
-import data1 from "./files/[2004]Tamo_ai_na_Atividade/data.js"
+import data0 from '../files/[1997]Transpiração_Contínua_Prolongada/data.js';
+import data1 from "../files/[2004]Tamo_ai_na_Atividade/data.js"
 
 var dataIndex = new Array(data0, data1)
-export default dataIndex;
 
 import {lerPlaylist} from './programa.js'
 
@@ -13,7 +12,7 @@ if(document.readyState == 'loading') {
 function pronto(){
     for(var i = 0; i < dataIndex.length; i++) {
         var indiceDataIndex = dataIndex[i]
-        lerPlaylist(indiceDataIndex, i)
+        lerPlaylist(indiceDataIndex)
     }; 
 }
 
