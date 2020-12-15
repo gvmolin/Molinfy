@@ -462,7 +462,7 @@ main {
 /*biblioteca */
 
 .titulo-aba {
-    font-size: 70px;
+    font-size: 60px;
 }
 
 .titulo-aba-container {
@@ -470,9 +470,10 @@ main {
     color: white;
     font-weight: 900;
     vertical-align: top;
-    margin-top: 100px;
+    margin-top: 60px;
     margin-left: 15px;
     letter-spacing: -1px;
+    width: 70%;
 }
 
 .titulo-aba-container h1, h4 {
@@ -489,11 +490,12 @@ main {
 
 .main-titulos {
     margin-top: 90px;
-    margin-bottom: 30px;
     display: inline-block;
+    width: 100%;
 }
 
 .label-lista {
+    margin: 4vh 0;
     width: 100%; 
     text-align: left;
 }
@@ -565,9 +567,14 @@ main {
 
 .musicas-lista {
     font-size: 14px;
+    margin: 0;
     margin-bottom: 10px;
 }
 
 audio {
     margin-bottom: 30px;
+}
+
+.container-titulos{
+    width: 100%;
 }
