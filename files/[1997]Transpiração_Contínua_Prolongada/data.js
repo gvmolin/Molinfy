@@ -33,11 +33,11 @@ var data = [
       file: "./files/[1997]Transpiração_Contínua_Prolongada/[07] Molengol's Groove [Vinheta].mp3"
     },
     {
-      title: "[08] Aquela Paz",
+      title: "Aquela Paz",
       file: "./files/[1997]Transpiração_Contínua_Prolongada/[08] Aquela Paz.mp3"
     },
     {
-      title: "[09] Quinta-Feira",
+      title: "Quinta-Feira",
       file: "./files/[1997]Transpiração_Contínua_Prolongada/[09] Quinta-Feira.mp3"
     },
     {
@@ -57,15 +57,15 @@ var data = [
       file: "./files/[1997]Transpiração_Contínua_Prolongada/[13] Falar, Falar....mp3"
     },
     {
-      title: "[14] Festa.mp3",
+      title: "Festa",
       file: "./files/[1997]Transpiração_Contínua_Prolongada/[14] Festa.mp3"
     },
     {
-      title: "Escalas Tropicais.mp3",
+      title: "Escalas Tropicais",
       file: "./files/[1997]Transpiração_Contínua_Prolongada/[15] Escalas Tropicais.mp3"
     },
     {
-      title: "[16] Charlie Brown Jr.",
+      title: "Charlie Brown Jr.",
       file: "./files/[1997]Transpiração_Contínua_Prolongada/[16] Charlie Brown Jr..mp3"
     }
 ];

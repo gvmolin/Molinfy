@@ -8,6 +8,7 @@
         
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="img/favicon.ico"/>
         
         <script src="./js/elementosDOM.js" async></script>
         <script src="./js/data-index.js" async type="module"></script>  
@@ -91,7 +92,7 @@
                     </div>
                     <div class="musicas-lista">
                     </div>
-                    <audio></audio>
+                    <audio loop preload="metadata"></audio>
 
                 </div> <!--container-conteudo-->  
             </div><!--janela-main-->
@@ -117,7 +118,7 @@
                 <div class="trackbar">
                     <div class="tempo">00:00</div>
                     <div>
-                      <input class="barra" type="range" min="0" max="100" step="1" />
+                      <input class="barra" type="range" min="0" max="100" step="1" value="0" />
                     </div>
                     <div class="tempo-total">00:00</div>
                 </div>
@@ -127,7 +128,7 @@
 
                 <div class="volume">
                     <button class="volume-btn"><img src="img/volume-icon.png" alt=""></button>
-                    <input class="barra-vol" type="range" min="0" max="100" step="1" />
+                    <input class="barra-vol" type="range" min="0" max="" step="0.25" />
                 </div>
             </div>
         </div>

@@ -43,8 +43,8 @@ function addLista(dir){
         
         
         var itemNovoLista = `
-                <div onclick="selecionarMusica('${posData.title}', '${dir[0].album}', '${dir[0].cover}')">
-                <h2>-</h2>
+                <div onclick="selecionarMusica('${posData.title}', '${dir[0].album}', '${dir[0].cover}', '${posData.file}')">
+                <h2>&#9654;</h2>
                 <h2 class="item-lista-titulo">${posData.title}</h2>
                 <h2 class="item-lista-album">${dir[0].album}</h2>
                 <h2 class="item-lista-artista">${dir[0].artist}</h2>
@@ -53,7 +53,6 @@ function addLista(dir){
             `
         itemLista.innerHTML = itemNovoLista
         areaItens.append(itemLista)
-
     };
 };
 
@@ -66,3 +65,4 @@ function lerPlaylist(dir){
 };
 
 export {lerPlaylist};
+

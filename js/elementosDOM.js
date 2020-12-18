@@ -13,3 +13,9 @@ var tituloTocador = document.querySelector('.titulos-musica h1')
 var artistaTocador = document.querySelector('.titulos-artista h2')
 
 var mainSuperior = document.querySelector('.main-superior')
+
+var playerPlay = document.querySelector('.play')
+var imgPlayerPLay = document.querySelector('.play img')
+var tempoTotal = document.querySelector('.tempo-total')
+var tempo = document.querySelector('.tempo')
+var barra = document.querySelector('.barra')
