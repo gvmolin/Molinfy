@@ -12,16 +12,16 @@
         
         <script src="./js/elementosDOM.js" async></script>
         <script src="./js/data-index.js" async type="module"></script>  
-        <script src="./js/programaPOS.js" async></script>  
+        <script src="./js/player.js" async></script>  
     </head>
 
     <body>
         <div class="barra-esquerda">
             <nav>
                 <figure class="logo"><a><img src="img/logo-branco.png"><figcaption>Molinfy.</figcaption></a></figure>
-                <ul class="itens-nav">
-                    <li>
-                        <a href="index.html"><div class="icon">&#8962;</div>
+                <ul class="itens-nav" style="margin-top: 20px;">
+                    <li class="inicio">
+                        <a><div class="icon">&#8962;</div>
                             <h3>Início</h3>
                         </a>
                     </li>
@@ -71,8 +71,7 @@
         <main>
             <div class="janela-main">
                 <div class="container-conteudo">
-                <div class="main-superior">
-
+                    <div class="main-superior">
                         <div class="main-superior-esquerda">
                             <button class="volta">&#10092;</button>
                             <button class="frente">&#10093;</button>
@@ -85,10 +84,53 @@
                                 <div class="avatar-circle"></div>
                                 username &#9207;
                             </button>
+
+                            <div class="avatar-onclick">
+                                <ul>
+                                    <li><a><h3>Perfil</h3></a></li>
+                                    <li><a><h3>Conta</h3></a></li>
+                                    <li><a><h3>Sair</h3></a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
                     <div class="main-titulos">
+                        <div class="apresentacao">
+                            <h1>Projeto portfolio "Molinfy - clone Spotify".</h1>
+                            <h2>Por: Gabriel Molin.</h2>
+                            <h1>Contatos:</h1>
+                            <div class="contatos">
+                                <div class="contato-item">
+                                    <div><img src="img/github-icon.svg" alt=""></div>
+                                    <h2>Github</h2><h3>github.com/gvmolin</h3>
+                                </div>
+
+                                <div class="contato-item">
+                                    <div></div>
+                                    <h2>Linkedin</h2><h3>www.fdfdf.com.br</h3>
+                                </div>
+
+                                <div class="contato-item">
+                                    <div></div>
+                                    <h2>Facebook</h2><h3>facebook.com/gvmolin</h3>
+                                </div>
+
+                                <div class="contato-item">
+                                    <div></div>
+                                    <h2>Email</h2><h3>molingv@hotmail.com</h3>
+                                </div>
+                                
+                                <div class="contato-item">
+                                    <div></div>
+                                    <h2>Telefone/Whatsapp</h2><h3>+55 11 983411315</h3>
+                                </div>
+
+                                
+                            </div>
+
+                            <h3>Nenhuma musica ou conteudo autoral foi utilizado de forma a lucrar, todo o conteudo da pagina visa somente a criar exemplos do funcionamento do programa.</h3>
+                        </div>
                     </div>
                     <div class="musicas-lista">
                     </div>
@@ -116,11 +158,11 @@
                 </div>
 
                 <div class="trackbar">
-                    <div class="tempo">00:00</div>
+                    <div class="tempo"><h3>00:00</h3></div>
                     <div>
-                      <input class="barra" type="range" min="0" max="100" step="1" value="0" />
+                      <input class="barra" type="range" step="0.25" value="0" />
                     </div>
-                    <div class="tempo-total">00:00</div>
+                    <div class="tempo-total"><h3>00:00</h3></div>
                 </div>
             </div>
 
@@ -128,11 +170,12 @@
 
                 <div class="volume">
                     <button class="volume-btn"><img src="img/volume-icon.png" alt=""></button>
-                    <input class="barra-vol" type="range" min="0" max="" step="0.25" />
+                    <input class="barra-vol" type="range" min="0" max="100" step="1" value="100"/>
                 </div>
             </div>
         </div>
-
+    
+        <script src="js/adicionais.js" async></script>
     </body>
 
 </html>

@@ -6,7 +6,7 @@ var data = [
     },
     {
       title: "Tributo ao Frango da Malásia [Introdução]",
-      file: "./files/[1997]Transpiração_Contínua_Prolongada/[01] Malabarizando (Quem é De Fé Continua Com A Gente).mp3"
+      file: "./files/[1997]Transpiração_Contínua_Prolongada/[01] Tributo ao Frango da Malásia [Introdução].mp3"
     },
     {
       title: "O Coro Vai Comê!",
@@ -29,8 +29,8 @@ var data = [
       file: "./files/[1997]Transpiração_Contínua_Prolongada/[06] Gimme o Anel.mp3"
     },
     {
-      title: "Molengol's Groove [Vinheta]",
-      file: "./files/[1997]Transpiração_Contínua_Prolongada/[07] Molengol's Groove [Vinheta].mp3"
+      title: "Molengols Groove [Vinheta]",
+      file: "./files/[1997]Transpiração_Contínua_Prolongada/[07] Molengols Groove [Vinheta].mp3"
     },
     {
       title: "Aquela Paz",

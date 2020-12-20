@@ -1,5 +1,6 @@
 function montarPagina(dir){
     areaSuperior.innerHTML = ""
+    areaItens.innerHTML = ""
     var containerConteudo = document.createElement('div')
     containerConteudo.classList.add('aba-titulos')
     
@@ -41,16 +42,17 @@ function addLista(dir){
         var itemLista = document.createElement('div')
         itemLista.classList.add('item-lista')
         
-        
         var itemNovoLista = `
-                <div onclick="selecionarMusica('${posData.title}', '${dir[0].album}', '${dir[0].cover}', '${posData.file}')">
+            <div onclick="selecionarMusica('${posData.title}', '${dir[0].album}', '${dir[0].cover}', '${posData.file}')">
                 <h2>&#9654;</h2>
                 <h2 class="item-lista-titulo">${posData.title}</h2>
                 <h2 class="item-lista-album">${dir[0].album}</h2>
                 <h2 class="item-lista-artista">${dir[0].artist}</h2>
-                <h2 class="item-lista-dur">--</h2>
-                </div>
+                <h2 class="item-lista-dur">--</h2>  
+            </div>
             `
+        //onclick="selecionarMusica('${posData.title}', '${dir[0].album}', '${dir[0].cover}', '${posData.file}')"
+        //itemLista.addEventListener('click', ()=>{selecionarMusica(posData.title, dir[0].album, dir[0].cover, posData.file)})
         itemLista.innerHTML = itemNovoLista
         areaItens.append(itemLista)
     };
@@ -58,6 +60,7 @@ function addLista(dir){
 
 function lerPlaylist(dir){
     var itemPlaylist = document.createElement('li')
+    itemPlaylist.classList.add('item-playlist')
     itemPlaylist.innerHTML = `<div><h3>${dir[0].album}</h3></div>`
     
     itemPlaylist.addEventListener('click',() => {montarPagina(dir)})

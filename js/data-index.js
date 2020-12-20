@@ -15,4 +15,3 @@ function pronto(){
         lerPlaylist(indiceDataIndex)
     }; 
 }
-
